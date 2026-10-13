@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="معرض Z - تصاميم Thumbnails احترافية ليوتيوب جاهزة للتحميل">
+  <title>معرض Z | Z Gallery - تصاميم يوتيوب احترافية</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-z">Z</span>
+        <span class="logo-text">معرض Z</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">الرئيسية</a>
+        <a href="gallery.html" class="nav-link">معرض الصور</a>
+        <a href="about.html" class="nav-link">من نحن</a>
+        <a href="contact.html" class="nav-link">تواصل معي</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">تصاميم <span class="highlight">Thumbnails</span> احترافية ليوتيوب</h1>
+      <p class="hero-desc">10 تصاميم جاهزة بمقاس 1280×720 بجودة عالية — حمّلها مجانًا وزد معدل النقر على فيديوهاتك</p>
+      <div class="hero-actions">
+        <a href="gallery.html" class="btn btn-primary">استعرض المعرض</a>
+        <a href="#featured" class="btn btn-outline">شاهد العينات</a>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2 class="section-title">أحدث التصاميم</h2>
+      <p class="section-subtitle">تصاميم مميزة جاهزة للاستخدام المباشر</p>
+      <div class="thumbs-grid" id="featuredGrid"></div>
+      <div class="text-center mt-40">
+        <a href="gallery.html" class="btn btn-primary">عرض كل التصاميم</a>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">لماذا معرض Z؟</h2>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon">📐</div><h3>مقاس مثالي</h3><p>كل صورة بمقاس 1280×720 بكسل — المقاس القياسي ليوتيوب</p></div>
+        <div class="feature-card"><div class="feature-icon">🎨</div><h3>تصميم احترافي</h3><p>ألوان جريئة ونصوص عربية واضحة لزيادة معدل النقر (CTR)</p></div>
+        <div class="feature-card"><div class="feature-icon">⬇️</div><h3>تحميل فوري</h3><p>اضغط على زر التحميل واحصل على الصورة بجودة PNG كاملة</p></div>
+        <div class="feature-card"><div class="feature-icon">📱</div><h3>متجاوب بالكامل</h3><p>الموقع يعمل بسلاسة على الموبايل والتابلت والكمبيوتر</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <h2>جاهز لرفع مستوى قناتك؟</h2>
+      <p>حمّل التصاميم الآن وابدأ في جذب المزيد من المشاهدين</p>
+      <a href="gallery.html" class="btn btn-primary btn-lg">اذهب إلى المعرض</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-z">Z</span> معرض Z<p>تصاميم Thumbnails احترافية ليوتيوب</p></div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a><a href="gallery.html">المعرض</a><a href="about.html">من نحن</a><a href="contact.html">تواصل</a>
+      </div>
+      <p class="copyright">© 2026 معرض Z — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+  <div class="modal" id="previewModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">&times;</button>
+      <img id="modalImage" src="" alt="معاينة">
+      <div class="modal-actions"><h3 id="modalTitle"></h3><a id="modalDownload" href="" download class="btn btn-primary">تحميل الصورة</a></div>
+    </div>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
